@@ -1,0 +1,4 @@
+interface:
+  display_name: "SCP Backend Standards"
+  short_description: "Apply SCP backend coding and API standards"
+  default_prompt: "Use $scp-backend-standards to review this SCP backend change against project conventions."

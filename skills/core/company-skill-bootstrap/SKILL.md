@@ -9,14 +9,24 @@ description: Standard workflow to propose, design, and publish reusable Codex sk
 
 Create or update skills in this repository with consistent structure and quality so teams can reuse them across projects.
 
-## Required Output
+## Activation Triggers
 
-For each skill task, produce:
+Use this skill when:
 
-1. Skill folder in `skills/` using lowercase hyphen-case
-2. `SKILL.md` with frontmatter (`name`, `description`) and imperative instructions
-3. `agents/openai.yaml` with `display_name`, `short_description`, `default_prompt`
-4. Only required resource folders (`scripts/`, `references/`, `assets/`)
+- Creating a new reusable Codex skill
+- Refactoring an existing company skill
+- Standardizing folder structure for a new skill
+- Preparing a PR to publish skills for multi-project use
+
+## Required Output Contract
+
+When used, the assistant must return:
+
+1. Folder structure proposal (tree format)
+2. Draft `SKILL.md` content
+3. `agents/openai.yaml` content (if required)
+4. Recommended trigger description
+5. Review checklist confirmation
 
 ## Workflow
 
@@ -29,7 +39,8 @@ For each skill task, produce:
 ### 2. Design reusable resources
 
 - Add `scripts/` only for deterministic repeated operations.
-- Add `references/` for long or domain-specific material.
+- Store reusable templates and standards in repository root `references/`.
+- Add skill-local `references/` only for skill-specific overlays or adaptations.
 - Add `assets/` only for files copied into deliverables.
 - Keep `SKILL.md` lean and link detailed content from `references/`.
 
@@ -64,5 +75,8 @@ For each skill task, produce:
 
 ## References
 
-- Read `references/intake-template.md` during discovery and scoping.
-- Read `references/review-checklist.md` before opening or approving a pull request.
+- Read `../../../references/intake-template.md` during discovery and scoping.
+- Read `../../../references/review-checklist.md` before opening or approving a pull request.
+- Read `../../../references/output-contracts.md` for standardized output contracts.
+- Read `references/intake-template.md` for this skill-specific intake overlay.
+- Read `references/review-checklist.md` for this skill-specific review overlay.
