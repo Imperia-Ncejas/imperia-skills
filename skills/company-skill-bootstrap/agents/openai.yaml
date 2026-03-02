@@ -1,0 +1,4 @@
+interface:
+  display_name: "Company Skill Bootstrap"
+  short_description: "Help create reusable company Codex skills"
+  default_prompt: "Use $company-skill-bootstrap to design and scaffold a reusable skill for this repository."
