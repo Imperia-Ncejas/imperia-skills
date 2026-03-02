@@ -1,0 +1,17 @@
+owners:
+  core:
+    - "platform-team"
+  shared:
+    - "engineering-enablement"
+  backend-csharp:
+    - "backend-team"
+  frontend-angular:
+    - "frontend-team"
+  qa-product:
+    - "qa-product-team"
+  projects:
+    - "project-tech-leads"
+
+review:
+  required_approvals: 1
+  require_domain_owner: true
